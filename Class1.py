@@ -25,9 +25,14 @@ import pandas as pd
 
 my_sentence = "This is a sample sentence for testing."
 def count_words(sentence):
-    # Write your function here
+    # Write your function here. You should store the number of words in the num_words variable
 
-    # return number of words in the sentence
+
+    # =========== Make sure that script can run before defining num_words ======
+    try:
+        num_words
+    except NameError:
+        num_words = 0
     return num_words
 
 # Test the function with the sample sentence
