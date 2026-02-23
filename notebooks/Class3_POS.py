@@ -232,26 +232,26 @@ CEFR_A1_POS = pd.read_csv("../data/CEFR_A1_POS.csv")
 # Our hypothesis is that the extra year of practice with english, results in a higher frequency of complex noun phrases, which often contain participle verbs. 
 # So we expect to see a higher relative frequency of VerbForm=Part in the B2 dataframe compared to the A2 dataframe.
 
-# %% [markdown]
-# # Step 1: Count VerbForm=Part, Verbs, and total tokens for each document in the A2 and B2 dataframes.
-# # To get you started, here is how you count the total number of tokens per document:
-# total_tokens_a2 = pos_df_a2.groupby("doc_id").size()
-# total_tokens_b2 = pos_df_b2.groupby("doc_id").size()
-# 
-# # Hint: To count only verbs, you need to filter the dataframe before groupby.
-# # You can filter a dataframe like this: pos_df[pos_df["column"] == "value"].groupby("doc_id").size()
-# total_verbs_a2 = # YOUR CODE HERE
-# total_verbs_b2 = # YOUR CODE HERE
-# 
-# # Hint: To count only participle verbs, you need to filter on TWO conditions.
-# # You can combine two conditions like this: df[(df["col1"] == "val1") & (df["col2"] == "val2")].groupby("doc_id").size()
-# part_verbs_a2 = # YOUR CODE HERE
-# part_verbs_b2 = # YOUR CODE HERE
-# 
-# # Step 2: Normalize — divide participle count by total verbs to get a rate per document.
-# # Hint: Use .fillna(0) to handle documents that have no verbs at all.
-# rate_a2 = # YOUR CODE HERE
-# rate_b2 = # YOUR CODE HERE
+# %%
+# Step 1: Count VerbForm=Part, Verbs, and total tokens for each document in the A2 and B2 dataframes.
+# To get you started, here is how you count the total number of tokens per document:
+total_tokens_a2 = pos_df_a2.groupby("doc_id").size()
+total_tokens_b2 = pos_df_b2.groupby("doc_id").size()
+
+# Hint: To count only verbs, you need to filter the dataframe before groupby.
+# You can filter a dataframe like this: pos_df[pos_df["column"] == "value"].groupby("doc_id").size()
+total_verbs_a2 = # YOUR CODE HERE
+total_verbs_b2 = # YOUR CODE HERE
+
+# Hint: To count only participle verbs, you need to filter on TWO conditions.
+# You can combine two conditions like this: df[(df["col1"] == "val1") & (df["col2"] == "val2")].groupby("doc_id").size()
+part_verbs_a2 = # YOUR CODE HERE
+part_verbs_b2 = # YOUR CODE HERE
+
+# Step 2: Normalize — divide participle count by total verbs to get a rate per document.
+# Hint: Use .fillna(0) to handle documents that have no verbs at all.
+rate_a2 = # YOUR CODE HERE
+rate_b2 = # YOUR CODE HERE
 
 # %%
 
