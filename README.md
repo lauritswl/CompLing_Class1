@@ -32,14 +32,14 @@ You want to avoid being outside ´/work/*your_name_XXXX*´ as this leads to your
 
 1. Open the terminal
 2. Use the command `ls` to see you current file location
-3. Use `cd` to change your current directory, you can use the tab-key to avoid typos
+3. Use `cd Your_Folder_Name` to change your current directory, you can use the tab-key to avoid typos
 4. Navigate to your memberfiles.
 
 ### 3. Clone this github repository
 Once you are located in your memberfiles, you are able to download the exercise for today.
 
 1. Find the url for this repository at the `<> Code`-button
-2. Run `git clone https://github.com/lauritswl/CompLing_Class1.git` in the terminal
+2. Run `git clone https://github.com/lauritswl/CompLing_F26.git` in the terminal
 
 ### 4. Create a Python virtual environment with `uv`
 `uv` is a package management software, that is easy to use as a beginner, and has a lot of cool tools as you improve.
