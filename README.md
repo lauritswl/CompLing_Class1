@@ -1,5 +1,6 @@
 # Computational Linguistics - Spring 26
 I will upload new files to this repository as the class progresses.
+You can use navigate to your CompLing_F26 folder with the `cd Your_Folder_Path` function, and then use `git pull` to download all new elements.
 
 
 ## Setup Guide
@@ -14,8 +15,7 @@ You will:
 
 1. Start a UCloud run  
 2. Navigate your files using the terminal  
-3. Clone this github repository
-4. Create a Python virtual environment with `uv`
+3. Download the files.
 5. Start working on the Python tasks  
 
 ---
@@ -38,22 +38,16 @@ You want to avoid being outside ´/work/*your_name_XXXX*´ as this leads to your
 ### 3. Clone this github repository
 Once you are located in your memberfiles, you are able to download the exercise for today.
 
+#### 3.1. If this is the first time you download the files
 1. Find the url for this repository at the `<> Code`-button
 2. Run `git clone https://github.com/lauritswl/CompLing_F26.git` in the terminal
 
-### 4. Create a Python virtual environment with `uv`
-`uv` is a package management software, that is easy to use as a beginner, and has a lot of cool tools as you improve.
-For now you just need to use it for seting up a venv, installing packages and running files.
-
-1. Navigate your cd into the newly downloaded repository `cd CompLing_Class1/`
-2. Create a venv `uv venv`
-3. Try to run the python script and get an error: `uv run Class1.py`
-4. Install pandas in your environment `uv pip install pandas`
-5. Run the script again `uv run Class1.py`
+#### 3.2. If you already have the CompLing_F26 folder
+1. Make sure you navigate to your CompLing folder - i.e. `cd CompLing_F26`
+2. Use the `git pull` command, you don't need to use a url for this command.
 
 ### 5. Start working on the Python tasks  
-I have created a set of tasks that investigate the relationship between sentence length and proficiency in a second language.
-Try to complete these tasks without generative-AI, as they will be way to easy otherwise, and should be manageable with only google.
+You can find the notebook coresponding to the class of the day in the notebooks folder.
 Or ask me for help, thats what im here for! :))
 
 
